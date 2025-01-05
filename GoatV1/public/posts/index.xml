@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 道观小站</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 道观小站</description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jan 2025 22:27:26 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Third Post</title>
+      <link>http://localhost:1313/posts/my-third-post/</link>
+      <pubDate>Sat, 04 Jan 2025 22:27:26 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post/</guid>
+      <description>&lt;h2 id=&#34;asdasdadsad&#34;&gt;asdasdadsad&lt;/h2&gt;
+&lt;p&gt;sdaasdada&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Second Post</title>
+      <link>http://localhost:1313/posts/my-second-post/</link>
+      <pubDate>Sat, 04 Jan 2025 22:26:20 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-second-post/</guid>
+      <description>&lt;h1 id=&#34;测试&#34;&gt;测试&lt;/h1&gt;
+&lt;h2 id=&#34;这是一个测试&#34;&gt;这是一个测试&lt;/h2&gt;
+&lt;h3 id=&#34;3-这是测试&#34;&gt;3 这是测试&lt;/h3&gt;
+&lt;p&gt;啊大苏打大苏打&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Sat, 04 Jan 2025 22:24:19 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;如何自定义icon&#34;&gt;如何自定义icon&lt;/h1&gt;
+&lt;p&gt;可以参考&lt;a href=&#34;https://kyxie.me/zh/blog/tech/web/papermod/#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E5%9B%BE%E6%A0%87&#34;&gt;这个链接&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;如何改图片的边框椭圆改方形&#34;&gt;如何改图片的边框（椭圆改方形）&lt;/h1&gt;
+&lt;p&gt;这个是根据对应的css去改。例如要把profile页的图片从椭圆改成方形，就到主题的assets/css/common里面，里面有各种类型的css，到profile-mode.css找到 img的border-radius进行修改，本来是50%椭圆形，改成了0就方形了。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
