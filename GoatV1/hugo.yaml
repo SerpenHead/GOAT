@@ -29,26 +29,58 @@ menu:
 #       url: "<link2>"
 
 # Profile Mode
+# params:
+#   profileMode:
+#     enabled: true
+#     title: "Lionel Messi" # optional default will be site title
+#     subtitle: "The Greatest of All Time"
+#     imageUrl: "/image/messi-world-cup.jpg" # optional
+#     imageTitle: "梅西亲吻世界杯奖杯" # optional
+#     imageWidth: 568 # custom size
+#     imageHeight: 400 # custom size
+#     buttons:
+#       - name: Archive
+#         url: "/archives/"
+#       - name: Github
+#         url: "https://github.com/"
+
+#   socialIcons: # optional
+#     - name: "pornhub"
+#       url: "https://pornhub.com/"
+#     - name: "github"
+#       url: "https://github.com/"
 params:
   profileMode:
     enabled: true
-    title: "<Title>" # optional default will be site title
-    subtitle: "<This is subtitle>"
-    imageUrl: "/image/messi-world-cup.jpg" # optional
-    imageTitle: "梅西亲吻世界杯奖杯" # optional
-    imageWidth: 568 # custom size
-    imageHeight: 400 # custom size
-    buttons:
-      - name: Archive
-        url: "/archives/"
-      - name: Github
-        url: "https://github.com/"
+    person:
+      - imageUrl: "/image/messi-world-cup.jpg"
+        title: "Person 1"
+        subtitle: "This is Person 1"
+        buttons:
+          - name: Archive
+            url: "/archives/"
+          - name: "GitHub"
+            url: "https://github.com/person1"
+          - name: "Twitter"
+            url: "https://twitter.com/person1"
+      - imageUrl: "/image/messi-world-cup.jpg"
+        title: "Person 2"
+        subtitle: "This is Person 2"
+        imageWidth: 300px
+        imageHeight: 400px
+        buttons:
+          - name: "GitHub"
+            url: "https://github.com/person2"
+          - name: "Twitter"
+            url: "https://twitter.com/person2"
+    navButtons:
+      - name: "Home"
+        url: "/"
+      - name: "About"
+        url: "/about"
+      - name: "Contact"
+        url: "/contact"
 
-  socialIcons: # optional
-    - name: "pornhub"
-      url: "https://pornhub.com/"
-    - name: "github"
-      url: "https://github.com/"
 
 
 outputs:

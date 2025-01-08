@@ -5,3 +5,5 @@ title: 'My Third Post'
 ---
 ## asdasdadsad
 sdaasdada
+
+$$\alpha = 2 + 3x - \frac{2}{3_f}$$
