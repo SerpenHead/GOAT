@@ -1,0 +1,48 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: NIMO不抽香烟
+theme: ["hugo-PaperMod"]
+
+params:
+  profileMode:
+    enabled: true
+    title: "CR7 is best" # optional default will be site title
+    subtitle: "no doubtful GOAT"
+    imageUrl: "/images/CR7.webp" # optional
+    imageTitle: "CR7" # optional
+    imageWidth: 350 # custom size
+    imageHeight: 350 # custom size
+    buttons:
+      - name: Archive
+        url: "/archives/"
+      - name: Github
+        url: "https://github.com/"
+
+  socialIcons: # optional
+     - name: "github"
+       url: "https://github.com/SerpenHead"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
