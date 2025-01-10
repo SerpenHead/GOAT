@@ -1,0 +1,156 @@
+.buttons,
+.main .profile {
+    display: flex;
+    justify-content: center;
+}
+
+.main .profile {
+    align-items: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+    text-align: center;
+}
+.profile .profile_inner {
+    display: flex;
+    flex-direction: row; /* 横向排列 */
+    justify-content: space-between; /* 左中右三栏分布 */
+    align-items: flex-start; /* 顶部对齐 */
+    width: 100%; /* 宽度占满屏幕 */
+    gap: 0; /* 去掉多余的栏间距 */
+}
+
+/* 左栏 */
+.person_profile_left {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 内容在每栏中居中对齐 */
+    gap: 10px;
+    width: 40%; /* 左栏宽度设为40% */
+    border: 2px solid red; /* 调试边框：红色 */
+}
+
+/* 中间导航栏 */
+.nav-buttons {
+
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 居中对齐 */
+    justify-content: center; /* 垂直方向居中 */
+    gap: 15px; /* 按钮间距 */
+    width: 20%; /* 中间导航栏宽度保持为20% */
+    border: 2px solid blue; /* 调试边框：蓝色 */
+}
+
+/* 右栏 */
+.person_profile_right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40%; /* 右栏宽度设为40% */
+    border: 2px solid green; /* 调试边框：绿色 */
+}
+.nav-button {
+    display: block;
+    background: var(--tertiary);   /* 设置按钮的背景颜色 */
+    color: var(--text-primary);   /* 设置按钮的文本颜色 */
+    text-decoration: none;   /* 移除文本装饰（如下划线） */
+    padding: 8px 14px;   /* 设置按钮的内边距，上下10px，左右20px */
+    border-radius: var(--radius);  /* 设置按钮的圆角半径 */
+    transition: background 0.3s, transform 0.1s;  /* 设置背景颜色和变换效果的过渡时间 */
+    text-align: center;   /* 设置文本居中对齐 */
+}
+
+.nav-button:hover {
+    background: var(--tertiary-dark);  /* 设置按钮在悬停时的背景颜色 */
+}
+
+.nav-button:active {
+    transform: scale(0.96);   /* 设置按钮在点击时的缩放效果 */
+}
+
+
+/* 修改左侧的主副标题、图片*/
+.profile .profile_inner .person_profile_left .main_title {
+    color: blue;
+}
+.profile .profile_inner .person_profile_left .subtitle {
+    color: rgb(16, 147, 56);
+}
+.profile .profile_inner .person_profile_left img {
+    border-radius: 1%;
+   
+}
+/*修改左侧的按钮样式*/
+.profile .profile_inner .person_profile_left .buttons {
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.profile .profile_inner .person_profile_left .button {
+    background: var(--tertiary);
+    border-radius: var(--radius);
+    color:  rgb(237, 4, 132);
+    margin: 8px;  /* 设置按钮的外边距 */
+    padding: 6px;   /* 设置按钮的内边距 */
+    transition: transform 0.1s , background 0.3s;  /*变换效果的时间，缩放完成时间是transform，背景颜色变换完成时间是background*/
+}
+
+.profile .profile_inner .person_profile_left .button-inner {
+    padding: 0 8px;   /* 设置按钮的内边距，上下10px，左右20px */
+    /* color: var(--text-primary); 设置字体颜色 */
+    /* color:  red; */
+}
+
+.profile .profile_inner .person_profile_left .button:active {
+    transform: scale(0.96);
+}
+/* button 的hover：button在悬停时的效果*/
+.profile .profile_inner .person_profile_left .button:hover {
+    background:rgb(84, 121, 242)
+}
+
+
+
+/* 修改右侧的主副标题、图片*/
+.profile .profile_inner .person_profile_right .main_title {
+    color: rgb(22, 198, 63);
+}
+.profile .profile_inner .person_profile_right .subtitle {
+    color: rgb(55, 9, 222);
+}
+.profile .profile_inner .person_profile_right img {
+    border-radius: 60%;
+}
+/*修改右侧的按钮样式*/
+.profile .profile_inner .person_profile_right .buttons {
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.profile .profile_inner .person_profile_right .button {
+    background: var(--tertiary);
+    border-radius: var(--radius);
+    color:  rgb(81, 237, 4);
+    margin: 8px;  /* 设置按钮的外边距 */
+    padding: 6px;   /* 设置按钮的内边距 */
+    transition: transform 0.1s , background 0.3s;  /*变换效果的时间，缩放完成时间是transform，背景颜色变换完成时间是background*/
+}
+
+.profile .profile_inner .person_profile_right .button-inner {
+    padding: 0 8px;   /* 设置按钮的内边距，上下10px，左右20px */
+    /* color: var(--text-primary); 设置字体颜色 */
+    /* color:  red; */
+}
+
+.profile .profile_inner .person_profile_right .button:active {
+    transform: scale(0.96);
+}
+/* button 的hover：button在悬停时的效果*/
+.profile .profile_inner .person_profile_right .button:hover {  
+    background:chocolate
+}
+
+
+

@@ -1,3 +1,110 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: My New Hugo Site
+title: 道观小站
+theme: PaperMod
+
+
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 9
+    - identifier: Search
+      name: 搜索
+      url: /search/
+      weight: 10
+
+#  Home-Info Mode
+
+# params:
+#   homeInfoParams:
+#     Title: Hi there ！ 这里可以自由导管
+#     Content: 释放你自己！ release yourselves ！
+
+#   socialIcons: # optional
+#     - name: "github"
+#       url: "https://github.com/changdick"
+#     - name: "twitter"
+#       url: "<link2>"
+
+# Profile Mode
+# params:
+#   profileMode:
+#     enabled: true
+#     title: "Lionel Messi" # optional default will be site title
+#     subtitle: "The Greatest of All Time"
+#     imageUrl: "/image/messi-world-cup.jpg" # optional
+#     imageTitle: "梅西亲吻世界杯奖杯" # optional
+#     imageWidth: 568 # custom size
+#     imageHeight: 400 # custom size
+#     buttons:
+#       - name: Archive
+#         url: "/archives/"
+#       - name: Github
+#         url: "https://github.com/"
+
+#   socialIcons: # optional
+#     - name: "pornhub"
+#       url: "https://pornhub.com/"
+#     - name: "github"
+#       url: "https://github.com/"
+params:
+  profileMode:
+    enabled: true
+    person:
+      - imageUrl: "/image/messi-world-cup.jpg"
+        imageWidth: 500px
+        imageHeight: 320px
+        title: "Lionel Messi"
+        subtitle: "The Greatest of All Time"
+        socialIcons: # optional
+          - name: "pornhub"
+            url: "https://pornhub.com/"
+          - name: "github"
+            url: "https://github.com/changdick"
+        buttons:
+          - name: "GitHub"
+            url: "https://github.com/changdick"
+          - name: "Twitter"
+            url: "https://twitter.com/person1"
+      - imageUrl: "/image/messi-world-cup.jpg"
+        title: "Person 2"
+        subtitle: "This is Person 2"
+        imageWidth: 300px
+        imageHeight: 400px
+        socialIcons: # optional
+          - name: "pornhub"
+            url: "https://pornhub.com/"
+          - name: "github"
+            url: "https://github.com/"
+        buttons:
+          - name: "GitHub"
+            url: "https://github.com/person2"
+          - name: "Twitter"
+            url: "https://twitter.com/person2"
+    navButtons:
+      - name: "归档"
+        url: "/archives/"
+      - name: "搜索"
+        url: "/search/"
+      - name: "Contact"
+        url: "/contact"
+      - name: "About"
+        url: "/about"
+  # socialIcons0: # optional
+  #   - name: "pornhub"
+  #     url: "https://pornhub.com/"
+  #   - name: "github"
+  #     url: "https://github.com/changdick"
+  # socialIcons1: # optional
+  #   - name: "pornhub"
+  #     url: "https://pornhub.com/"
+  #   - name: "github"
+  #     url: "https://github.com/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
