@@ -23,8 +23,9 @@
 }
 
 .logo a {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
+    color: fuchsia;
 }
 
 .logo a img, .logo a svg {
@@ -62,11 +63,12 @@ body:not(.dark) #sun {
 }
 
 #menu a {
-    font-size: 16px;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 #menu .active {
-    font-weight: 500;
+    font-weight: 800;
     border-bottom: 2px solid currentColor;
 }
 

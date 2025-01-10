@@ -54,13 +54,18 @@ params:
     enabled: true
     person:
       - imageUrl: "/image/messi-world-cup.jpg"
-        title: "Person 1"
-        subtitle: "This is Person 1"
+        imageWidth: 500px
+        imageHeight: 320px
+        title: "Lionel Messi"
+        subtitle: "The Greatest of All Time"
+        socialIcons: # optional
+          - name: "pornhub"
+            url: "https://pornhub.com/"
+          - name: "github"
+            url: "https://github.com/changdick"
         buttons:
-          - name: Archive
-            url: "/archives/"
           - name: "GitHub"
-            url: "https://github.com/person1"
+            url: "https://github.com/changdick"
           - name: "Twitter"
             url: "https://twitter.com/person1"
       - imageUrl: "/image/messi-world-cup.jpg"
@@ -68,20 +73,35 @@ params:
         subtitle: "This is Person 2"
         imageWidth: 300px
         imageHeight: 400px
+        socialIcons: # optional
+          - name: "pornhub"
+            url: "https://pornhub.com/"
+          - name: "github"
+            url: "https://github.com/"
         buttons:
           - name: "GitHub"
             url: "https://github.com/person2"
           - name: "Twitter"
             url: "https://twitter.com/person2"
     navButtons:
-      - name: "Home"
-        url: "/"
-      - name: "About"
-        url: "/about"
+      - name: "归档"
+        url: "/archives/"
+      - name: "搜索"
+        url: "/search/"
       - name: "Contact"
         url: "/contact"
-
-
+      - name: "About"
+        url: "/about"
+  # socialIcons0: # optional
+  #   - name: "pornhub"
+  #     url: "https://pornhub.com/"
+  #   - name: "github"
+  #     url: "https://github.com/changdick"
+  # socialIcons1: # optional
+  #   - name: "pornhub"
+  #     url: "https://pornhub.com/"
+  #   - name: "github"
+  #     url: "https://github.com/"
 
 outputs:
   home:
