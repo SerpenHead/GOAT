@@ -79,14 +79,22 @@
     font-weight: 700; /* 字体粗细 */
     background: linear-gradient(
         70deg,
-        #3498db,
+        var(--proLtilecolorA),
+        var(--proLtilecolorA) 15%,
+        var(--proLtilecolorB) 30%,
+        var(--proLtilecolorA) 45%,
+        var(--proLtilecolorB) 60%,
+        var(--proLtilecolorA) 75%,
+        var(--proLtilecolorB) 90%,
+        var(--proLtilecolorA) 100%
+        /* #3498db,
         #3498db 15%,
         #ffffff 30%,
         #3498db 45%,
         #ffffff 60%,
         #3498db 75%,
         #ffffff 90%,
-        #3498db 100%
+        #3498db 100% */
 
     ); /* 渐变背景 */
     -webkit-background-clip: text; /* 仅应用于文本 */
@@ -97,18 +105,38 @@
 .profile .profile_inner .person_profile_left .subtitle {
     font-size: 48px; /* 字体大小略小于主标题 */
     font-weight: 600; /* 字体粗细略小于主标题 */
-    background: radial-gradient(circle, #3498db, #ffffff);
+    background: radial-gradient(circle, var(--proLtilecolorA), var(--proLtilecolorB));
     -webkit-background-clip: text; /* 仅应用于文本 */
     background-clip: text; /* 标准属性 */
     color: transparent; /* 使文本颜色透明以显示背景 */
     text-align: left; /* 文本对齐方式 */
 }
+
+.profile .profile_inner .person_profile_left .profile-image-container {
+    position: relative;
+    width: 500px; /* 根据图片的宽度设置 */
+    height: 320px; /* 根据图片的高度设置 */
+}
+.profile-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.13s ease-in-out; /* 添加过渡效果 */
+}
+.profile-image-light {
+    opacity: var(--image-alpha); /* 使用 --image-alpha 变量 */
+}
+.profile-image-dark {
+    opacity: calc(1 - var(--image-alpha)); /* 使用 1 - --image-alpha 变量 */
+}
 .profile .profile_inner .person_profile_left img {
     border-radius: 1%;
     border: 4px solid; /* 边框宽度 */
     border-image: repeating-linear-gradient(90deg, 
-        #3498db 0%, #3498db 7px, 
-        #ffffff 7px, #ffffff 14px) 1; /* 蓝白色交替渐变 */
+    var(--proLtilecolorA) 0%, var(--proLtilecolorA) 7px, 
+    var(--proLtilecolorB) 7px, var(--proLtilecolorB) 14px) 1; /* 蓝白色交替渐变 */
 }
 /*修改左侧的按钮样式*/
 .profile .profile_inner .person_profile_left .buttons {
