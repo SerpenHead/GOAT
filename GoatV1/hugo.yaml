@@ -3,7 +3,7 @@ languageCode: en-us
 title: 道观小站
 theme: PaperMod
 
-
+# 菜单栏（右上方）
 menu:
   main:
     - identifier: home
@@ -14,6 +14,14 @@ menu:
       name: 搜索
       url: /search/
       weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: posts
+      name: 技术
+      url: /posts/
+      weight: 30
 
 #  Home-Info Mode
 
