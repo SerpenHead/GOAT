@@ -19,7 +19,7 @@
 " id="top">
     {{- partialCached "header.html" . .Page -}}
     <main class="main" 
-      style="{{ if and site.Params.profileMode.enabled .IsHome }}max-width: 100%;{{ else }}max-width: calc(var(--main-width) + var(--gap) * 2);{{ end }}">
+      style="{{ if or (and site.Params.profileMode.enabled .IsHome) .Params.forceFullWidth }}max-width: 100%;{{ else }}max-width: calc(var(--main-width) + var(--gap) * 2);{{ end }}">
     {{ block "main" . }}{{ end }}
 </main>
 

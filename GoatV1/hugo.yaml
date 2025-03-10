@@ -100,6 +100,40 @@ params:
         url: "/contact"
       - name: "About"
         url: "/about"
+  aboutPage:
+    enable: true
+    person:
+      - imageUrl: "/image/wzt.jpg"
+        imageWidth: 240px
+        imageHeight: 360px
+        title: "uzi"
+        subtitle: "18160996613 | 839231968 "
+        socialIcons: # optional
+          - name: "pornhub"
+            url: "https://pornhub.com/"
+          - name: "github"
+            url: "https://github.com/changdick"
+        buttons:
+          - name: "GitHub"
+            url: "https://github.com/changdick"
+          - name: "Twitter"
+            url: "https://twitter.com/person1"
+      - imageUrl: "/image/nimo.jpg"
+        title: "nimo"
+        subtitle: "_"
+        imageWidth: 240px
+        imageHeight: 360px
+        socialIcons: # optional
+          - name: "pornhub"
+            url: "https://pornhub.com/"
+          - name: "github"
+            url: "https://github.com/"
+        buttons:
+          - name: "GitHub"
+            url: "https://github.com/person2"
+          - name: "Twitter"
+            url: "https://twitter.com/person2"
+
   # socialIcons0: # optional
   #   - name: "pornhub"
   #     url: "https://pornhub.com/"

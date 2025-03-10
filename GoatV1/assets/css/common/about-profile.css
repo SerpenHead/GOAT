@@ -1,0 +1,199 @@
+
+.main .aprofile {
+    display: flex;
+    justify-content: center;
+}
+
+.main .aprofile {
+    align-items: center;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - (var(--gap) * 2));
+    text-align: center;
+}
+.aprofile .profile_inner {
+    display: flex;
+    flex-direction: row; /* 横向排列 */
+    /* justify-content: space-between; 左中右三栏分布 */
+    justify-content: center;
+    align-items: flex-start; /* 顶部对齐 */
+    width: 100%; /* 宽度占满屏幕 */
+    gap: 0; /* 去掉多余的栏间距 */
+}
+
+/* 左栏 */
+.aprofile .person_profile_left {
+
+    /* display: flex; */
+    flex: 0 0 50%; /* 左栏占50% */
+    flex-direction: column;
+    align-items: center; /* 内容在每栏中居中对齐 */
+    gap: 0;
+    
+    /* border: 2px solid red; 调试边框：红色 */
+}
+
+
+
+/* 右栏 */
+.aprofile .person_profile_right {
+    
+    flex: 1; /* 右栏占满剩余空间 */
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    /* border: 2px solid green; 调试边框：绿色 */
+}
+
+
+/* 修改左侧的主副标题、图片*/
+.aprofile .profile_inner .person_profile_left .main_title {
+    font-size: 64px; /* 字体大小 */
+    font-weight: 700; /* 字体粗细 */
+    
+    color: #b02828;
+
+
+    /*width属性：main_title这个元素的宽度，如果不设置，默认为auto，那么就内容来决定其宽度；字少的时候看上去就是居中的，尽管文字设置了靠左对齐
+    因为文字的确在该元素靠左对齐了，但是元素确实居中在父元素中，所以看上去就是居中的。上面设置了align-items: center导致的 */
+    
+    
+    text-align: center; /* 文本对齐方式 */
+}
+
+.aprofile .profile_inner .person_profile_left .subtitle {
+    font-size: 48px; /* 字体大小略小于主标题 */
+    font-weight: 600; /* 字体粗细略小于主标题 */
+    
+    color: var(--content);
+    text-align: left; /* 文本对齐方式 */
+}
+
+
+.aprofile .profile_inner .person_profile_left img {
+    border-radius: 1%;
+   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 柔和阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+}
+
+.aprofile .profile_inner .person_profile_left img:hover {
+    transform: scale(1.05); /* 悬停时轻微放大 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 悬停时阴影加深 */
+}
+
+/*修改左侧的按钮样式*/
+.aprofile .profile_inner .person_profile_left .buttons {
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.aprofile .profile_inner .person_profile_left .button {
+    background: var(--tertiary);
+    border-radius: var(--radius);
+    color:  var(--text-primary); /*调用变量，这个变量能够随主题色变色*/
+    margin: 8px;  /* 设置按钮的外边距 */
+    padding: 6px;   /* 设置按钮的内边距 */
+    transition: transform 0.1s , background 0.3s;  /*变换效果的时间，缩放完成时间是transform，背景颜色变换完成时间是background*/
+}
+/* 注：字体应该是button-inner里面的东西；但是在button也可以调 */
+.aprofile .profile_inner .person_profile_left .button-inner {
+    padding: 0 8px;   /* 设置按钮的内边距，上下10px，左右20px */
+    /* color: var(--text-primary); 设置字体颜色 */
+    /* color:  red; */
+    /* background: green; */ /*调试，开了这个就知道啥是button-inner了*/
+}
+
+.aprofile .profile_inner .person_profile_left .button:active {
+    transform: scale(0.96);
+}
+/* button 的hover：button在悬停时的效果*/
+.aprofile .profile_inner .person_profile_left .button:hover {
+    background:#db3434
+}
+
+
+
+/* 修改右侧的主副标题、图片*/
+/* 引入 Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&display=swap');
+/* 主标题样式 */
+
+.aprofile .profile_inner .person_profile_right .main_title {
+    font-size: 80px; /* 字体大小 */
+    font-weight: 800; /* 字体粗细 */
+    font-family: 'Bebas Neue', sans-serif; /* 使用 Bebas Neue 字体 */
+    background: radial-gradient(
+        circle, /* 圆形渐变 */
+        #ffd700, /* 中间金色 */
+        #ffd700 30%, /* 中间金色 */
+        #ffffff 70%, /* 周围白色 */
+        #ffffff 100% /* 周围白色 */
+    );
+    -webkit-background-clip: text; /* 仅应用于文本 */
+    background-clip: text; /* 标准属性 */
+    color: transparent; /* 使文本颜色透明以显示背景 */
+    text-align: left; /* 文本对齐方式 */
+}
+
+/* 副标题样式 */
+.aprofile .profile_inner .person_profile_right .subtitle {
+    font-size: 30px; /* 字体大小 */
+    font-weight: 500; /* 字体粗细 */
+    background: repeating-linear-gradient(
+        135deg, /* 斜向 */
+        #de0303, /* 白金色 */
+        #f5f5f5 10px, /* 白金色 */
+        #de0303 10px, /* 金色 */
+        #f5f5f5 20px /* 金色 */
+    );
+    -webkit-background-clip: text; /* 仅应用于文本 */
+    background-clip: text; /* 标准属性 */
+    color: transparent; /* 使文本颜色透明以显示背景 */
+    text-align: left; /* 文本对齐方式 */
+}
+.aprofile .profile_inner .person_profile_right img {
+    border-radius: 50% / 40%; /* 更扁平的椭圆形 */
+    border: 6px solid #e6d77c; /* 暗红色边框 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 柔和阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+    object-fit: cover; /* 确保图像比例不变，填充容器 */
+    object-position: top; /* 显示图像的上半部分 */
+    
+    
+}
+
+.aprofile .profile_inner .person_profile_right img:hover {
+    transform: scale(1.05); /* 悬停时轻微放大 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 悬停时阴影加深 */
+}
+/*修改右侧的按钮样式*/
+.aprofile .profile_inner .person_profile_right .buttons {
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.aprofile .profile_inner .person_profile_right .button {
+    background: var(--tertiary);
+    border-radius: var(--radius);
+    color:  rgb(81, 237, 4);
+    margin: 8px;  /* 设置按钮的外边距 */
+    padding: 6px;   /* 设置按钮的内边距 */
+    transition: transform 0.1s , background 0.3s;  /*变换效果的时间，缩放完成时间是transform，背景颜色变换完成时间是background*/
+}
+
+.aprofile .profile_inner .person_profile_right .button-inner {
+    padding: 0 8px;   /* 设置按钮的内边距，上下10px，左右20px */
+    /* color: var(--text-primary); 设置字体颜色 */
+    /* color:  red; */
+}
+
+.aprofile .profile_inner .person_profile_right .button:active {
+    transform: scale(0.96);
+}
+/* button 的hover：button在悬停时的效果*/
+.aprofile .profile_inner .person_profile_right .button:hover {  
+    background:chocolate
+}
+
+
+
